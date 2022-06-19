@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="mainbase::layout(~{:: section})">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <div class="container register">
+            <div class="row">
+                <div class="col-md-3 register-left">
+                    <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt=""/>
+                    <h3>Welcome</h3>
+                    <p>You are 30 seconds away from earning your own money!</p>
+                    <input type="submit" name="" value="Login"/><br/>
+                </div>
+                <div class="col-md-9 register-right">
+                                                    
+                                 
+                                    <a th:href="@{/studentregister}" ><input type="submit" class="btnRegister" value="Student Register" /> </a>
+                                
+                                    <a th:href="@{/teacherregister}" ><input type="submit" class="btnRegister" value="Teacher Register" /> </a>
+
+                                    <a th:href="@{/adminregister}" ><input type="submit" class="btnRegister" value="Admin Register" /> </a>
+                               
+                                </div>
+                            </div>
+                     
+                        </div>
+                    
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
+</body>
+</html>

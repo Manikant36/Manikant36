@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="mainbase::layout(~{::section})">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="${title}">Student Library</title>
+</head>
+<body>
+    <section class="center d-flex justify-content-center align-items-center">
+        <div class="text-center" >
+        
+        <h1 class="font-weight-bold">Welcome to Students Library</h1>
+        <p >A place where you can have better space to handle and easy to manage details of students and teachers.</p>
+   
+        <a  type="button" class="btn bg-primary text-white"> Admin Login Here</a>
+        <a  th:href="@{/userregister}"type="button" class="btn bg-primary text-white">Register</a>
+        
+    </div>
+</section>
+</body>
+</html>
